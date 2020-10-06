@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>BreadCrumbs</title>
     <style>
          .jumbotron{
@@ -16,6 +16,10 @@
         }
         p{
             font-size: 20px;
+        }
+        .login{
+            height: 25px;
+            width: 25px;
         }
     </style>
   </head>
@@ -51,13 +55,15 @@
                     <a href="aboutus.html" class="nav-link">About Us</a>
                 </div>
                 </div>
+                <div class="dropdown-divider"></div>
+                 <div class="nav-item ml-auto mr-3"><a href="#" class="nav-link"><button class="btn btn-primary btn-block d-flex justify-content-center" data-toggle="modal" data-target="#loginModal"><strong>Login</strong><ion-icon name="arrow-forward-circle-sharp" class="ml-3 p-0 login"></ion-icon></button></a></div>
             </div>
     </nav>
    
    <div class="container mt-5 mb-5">
        <div class="row justify-content-center">
            <div class="col-12">
-               <h1 class="mb-4"><strong>Title Description</strong></h1>
+               <h1 class="mb-4"><ion-icon name="home-sharp" class="h1-icon mr-3 m-0 p-0"></ion-icon><strong>Title Description</strong></h1>
                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus atque labore perferendis, fugit earum aut? Est mollitia aliquam, officiis amet temporibus veritatis. Numquam quos voluptates commodi voluptatem animi debitis sint.</p>
            </div>
            <div class="col-12"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ipsa veritatis quisquam. Vel reiciendis, blanditiis perspiciatis consequuntur illum recusandae voluptatem corporis voluptatum velit inventore assumenda nisi perferendis cumque ipsam nam.</p></div>
@@ -69,6 +75,33 @@
            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
        </div>
        </div>
+       <div class="modal fade" tabindex="-1" id="loginModal">
+           <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                   <div class="modal-header text-center">
+                       <div class="modal-title w-100"><strong><h3>Login Form</h3></strong></div>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="close" ><span aria-hidden="true">&times;</span></button>
+                   </div>
+                   <div class="modal-body">
+                       <form class="form-container m-3 p-4">
+                   <div class="form-group">
+                       <label for="email"><strong>Username</strong></label>
+                       <input type="email" class="form-control" placeholder="someone@example.com" id="mail">
+                   </div>
+                   <div class="forrm-group">
+                       <label for="password"><strong>Password</strong></label>
+                       <input type="password" placeholder="Password" class="form-control" id="pass">
+                   </div>
+                   <div class="form-group form-check mt-4">
+                       <input type="checkbox" class="form-check-input" id="check">
+                       <label for="check">Remember Me</label>
+                   </div>
+                   <button type="submit" class="btn btn-primary btn-block d-flex flex-sm-inline justify-content-center" onclick="Del()" style="font-size: 20px;"><strong>Login</strong><ion-icon name="arrow-forward-circle-outline" size="large" class="ml-2"></ion-icon></button>
+               </form>
+                   </div>
+               </div>
+           </div>
+       </div>
    </div>
    
    </div>
@@ -78,5 +111,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>
