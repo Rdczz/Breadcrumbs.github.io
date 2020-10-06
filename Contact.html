@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
         .jumbotron {
@@ -23,8 +24,18 @@
             width: 25px;
         }
     </style>
+
     <title>BreadCrumb</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <!-- Popper.js, then Bootstrap JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("[data-toggle=tooltip]").tooltip()
+        })
+    </script>
 </head>
 
 <body>
@@ -125,6 +136,33 @@
                     </div>
                 </div>
             </div>
+            <div class="card mb-3 ">
+                <img src="https://mdbootstrap.com/img/Photos/Others/intro1.jpg" alt="photo" class="card-img-top">
+                <div class="card-img-overlay d-none d-md-block">
+                    <h4 class="card-title text-white d-flex justify-content-center display-1 mt-5">Always at your Service.</h4>
+                    <div class="card-text text-white d-flex justify-content-center mt-4">This is an example of a card.</div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Anjani Rohith</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid sit consequuntur quisquam reiciendis dignissimos impedit maiores, distinctio officiis magnam quam debitis cumque tenetur assumenda id, molestias, fugiat modi quia.</p>
+                    <div class="row">
+                        <div class="col-12 w-100">
+                            <p class="card-text"><small class="text-muted">Last updated 7 min ago</small></p>
+                            <div class="btn-group">
+                                <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="+919390333331">
+                                    <ion-icon name="call"></ion-icon> Call
+                                </button>
+                                <button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Kmitonline@gmail.com">
+                                    <ion-icon name="mail"></ion-icon> Email
+                                </button>
+                                <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="www.kmitonline.com">
+                                    <ion-icon name="share-social"></ion-icon> Share
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -143,4 +181,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script type="text/javascript">
+        $(function() {
+                    $('[data-toggle="tooltip"]').tooltip()
+                }
+    </script>
 </body></html>
